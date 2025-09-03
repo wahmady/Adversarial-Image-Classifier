@@ -83,7 +83,7 @@ def predict(image):
 
 st.set_page_config(layout="wide", page_title="ML Model Stress Test")
 st.title("🤖 Adversarial Image Classifier Stress Test")
-st.write("Upload an image and use the sliders to apply 'aggressors' (distortions). See how the model's prediction and confidence change in real-time. This project demonstrates a key task for an **Algorithm Validation Engineer**: finding a model's breaking points.")
+st.write("Upload an image and use the sliders to apply 'aggressors' (distortions). See how the model's prediction and confidence change in real-time. This project aims at finding a model's breaking points.")
 st.markdown("---")
 
 # --- Sidebar for user controls ---
