@@ -108,34 +108,34 @@ if uploaded_file is not None:
         st.info(f"Confidence: **{original_conf:.2%}**")
 
         st.markdown("---")
-            st.subheader("Was the prediction wrong?")
-            
-            # Create a text box for user to enter the correct label
-            correct_label = st.text_input("Enter the correct label here:")
-            
-            # Create a button to submit the correction
-            if st.button("Submit Correction"):
-                if correct_label:
-                    import os
-                    
-                    # Create a feedback directory if it doesn't exist
-                    feedback_dir = "feedback"
-                    os.makedirs(feedback_dir, exist_ok=True)
-                    
-                    # Create a subdirectory for the correct label
-                    label_dir = os.path.join(feedback_dir, correct_label)
-                    os.makedirs(label_dir, exist_ok=True)
-                    
-                    # Save the image to the correct folder
-                    # We can use the hash of the image to create a unique filename
-                    import hashlib
-                    img_hash = hashlib.md5(original_image.tobytes()).hexdigest()
-                    filename = f"{img_hash}.png"
-                    original_image.save(os.path.join(label_dir, filename))
-                    
-                    st.success(f"Thank you! Your feedback for '{correct_label}' has been saved.")
-                else:
-                    st.warning("Please enter a label before submitting.")
+        st.subheader("Was the prediction wrong?")
+        
+        # Create a text box for user to enter the correct label
+        correct_label = st.text_input("Enter the correct label here:")
+        
+        # Create a button to submit the correction
+        if st.button("Submit Correction"):
+            if correct_label:
+                import os
+                
+                # Create a feedback directory if it doesn't exist
+                feedback_dir = "feedback"
+                os.makedirs(feedback_dir, exist_ok=True)
+                
+                # Create a subdirectory for the correct label
+                label_dir = os.path.join(feedback_dir, correct_label)
+                os.makedirs(label_dir, exist_ok=True)
+                
+                # Save the image to the correct folder
+                # We can use the hash of the image to create a unique filename
+                import hashlib
+                img_hash = hashlib.md5(original_image.tobytes()).hexdigest()
+                filename = f"{img_hash}.png"
+                original_image.save(os.path.join(label_dir, filename))
+                
+                st.success(f"Thank you! Your feedback for '{correct_label}' has been saved.")
+            else:
+                st.warning("Please enter a label before submitting.")
 
     with col2:
         st.header("Transformed Image")
