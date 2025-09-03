@@ -6,7 +6,7 @@ An interactive web application built with PyTorch and Streamlit to test the robu
 [➡️ Live Demo Link Here] (https://adversarial-image-classifier.streamlit.app/)
 
 🎯 Project Goal
-This project demonstrates the core responsibilities of a Machine Learning Algorithm Validation Engineer. Instead of just building a model, this tool is designed to find its weaknesses and quantify its performance under non-ideal conditions, directly simulating the process of ensuring an algorithm is ready for a real-world production environment.
+Instead of just building a model, this tool is designed to find its weaknesses and quantify its performance under non-ideal conditions, directly simulating the process of ensuring an algorithm is ready for a real-world production environment.
 
 It is a direct response to the need for engineers who can design and execute "live test procedures, aggressor searches, user studies, and annotation pipelines to improve and influence ML algorithm performance and design."
 
