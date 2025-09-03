@@ -10,9 +10,6 @@ This project demonstrates the core responsibilities of a Machine Learning Algori
 
 It is a direct response to the need for engineers who can design and execute "live test procedures, aggressor searches, user studies, and annotation pipelines to improve and influence ML algorithm performance and design."
 
-✨ Why This Project?
-This application was built to showcase key qualifications for the Algorithm Validation role at Apple:
-
 Directly Implements "Aggressor Searches": The job description emphasizes the need to design "aggressor searches." This tool's core feature is a set of interactive sliders that apply aggressors (brightness, noise, rotation) to an input image, allowing for immediate analysis of the model's response.
 
 Focuses on End-to-End System Performance: The tool visualizes the entire pipeline from user input to final prediction. This demonstrates an understanding of how to "evaluate and represent the true customer experience" by showing how real-world image imperfections can degrade model performance.
